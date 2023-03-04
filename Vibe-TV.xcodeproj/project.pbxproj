@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E4D830529B3C2A9005F7C64 /* Vibe_TVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4D830429B3C2A9005F7C64 /* Vibe_TVApp.swift */; };
+		9E4D830729B3C2A9005F7C64 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4D830629B3C2A9005F7C64 /* LaunchScreen.swift */; };
+		9E4D830929B3C2AA005F7C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E4D830829B3C2AA005F7C64 /* Assets.xcassets */; };
+		9E4D830C29B3C2AB005F7C64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E4D830B29B3C2AB005F7C64 /* Preview Assets.xcassets */; };
+		9E4D831829B3C603005F7C64 /* ColorsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4D831729B3C603005F7C64 /* ColorsHelper.swift */; };
+		9E4D831B29B3C925005F7C64 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 9E4D831A29B3C925005F7C64 /* Lottie */; };
+		9E4D831E29B3D0B4005F7C64 /* vibe-tv.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E4D831D29B3D0B4005F7C64 /* vibe-tv.json */; };
+		9E4D832029B3D0DD005F7C64 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4D831F29B3D0DD005F7C64 /* LottieView.swift */; };
+		9E4D832229B3D52F005F7C64 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4D832129B3D52F005F7C64 /* WelcomeScreen.swift */; };
+		9E4D832929B3D9F5005F7C64 /* LoopVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4D832829B3D9F5005F7C64 /* LoopVideo.swift */; };
+		9E4D832B29B3E188005F7C64 /* welcome-video-loop.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9E4D832A29B3E187005F7C64 /* welcome-video-loop.mp4 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9E4D830129B3C2A9005F7C64 /* Vibe-TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vibe-TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E4D830429B3C2A9005F7C64 /* Vibe_TVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibe_TVApp.swift; sourceTree = "<group>"; };
+		9E4D830629B3C2A9005F7C64 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		9E4D830829B3C2AA005F7C64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9E4D830B29B3C2AB005F7C64 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9E4D831729B3C603005F7C64 /* ColorsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsHelper.swift; sourceTree = "<group>"; };
+		9E4D831D29B3D0B4005F7C64 /* vibe-tv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "vibe-tv.json"; sourceTree = "<group>"; };
+		9E4D831F29B3D0DD005F7C64 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		9E4D832129B3D52F005F7C64 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		9E4D832829B3D9F5005F7C64 /* LoopVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopVideo.swift; sourceTree = "<group>"; };
+		9E4D832A29B3E187005F7C64 /* welcome-video-loop.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "welcome-video-loop.mp4"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E4D82FE29B3C2A9005F7C64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E4D831B29B3C925005F7C64 /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E4D82F829B3C2A9005F7C64 = {
+			isa = PBXGroup;
+			children = (
+				9E4D830329B3C2A9005F7C64 /* Vibe-TV */,
+				9E4D830229B3C2A9005F7C64 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E4D830229B3C2A9005F7C64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E4D830129B3C2A9005F7C64 /* Vibe-TV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E4D830329B3C2A9005F7C64 /* Vibe-TV */ = {
+			isa = PBXGroup;
+			children = (
+				9E4D830429B3C2A9005F7C64 /* Vibe_TVApp.swift */,
+				9E4D831529B3C413005F7C64 /* Views */,
+				9E4D831429B3C408005F7C64 /* Components */,
+				9E4D831329B3C3F3005F7C64 /* Resources */,
+				9E4D831229B3C3E4005F7C64 /* Helpers */,
+				9E4D830A29B3C2AB005F7C64 /* Preview Content */,
+			);
+			path = "Vibe-TV";
+			sourceTree = "<group>";
+		};
+		9E4D830A29B3C2AB005F7C64 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9E4D830B29B3C2AB005F7C64 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9E4D831229B3C3E4005F7C64 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9E4D831729B3C603005F7C64 /* ColorsHelper.swift */,
+				9E4D831F29B3D0DD005F7C64 /* LottieView.swift */,
+				9E4D832829B3D9F5005F7C64 /* LoopVideo.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9E4D831329B3C3F3005F7C64 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9E4D832329B3D824005F7C64 /* Videos */,
+				9E4D831C29B3D090005F7C64 /* Lotties */,
+				9E4D830829B3C2AA005F7C64 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9E4D831429B3C408005F7C64 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9E4D831529B3C413005F7C64 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9E4D830629B3C2A9005F7C64 /* LaunchScreen.swift */,
+				9E4D832129B3D52F005F7C64 /* WelcomeScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9E4D831C29B3D090005F7C64 /* Lotties */ = {
+			isa = PBXGroup;
+			children = (
+				9E4D831D29B3D0B4005F7C64 /* vibe-tv.json */,
+			);
+			path = Lotties;
+			sourceTree = "<group>";
+		};
+		9E4D832329B3D824005F7C64 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				9E4D832A29B3E187005F7C64 /* welcome-video-loop.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E4D830029B3C2A9005F7C64 /* Vibe-TV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E4D830F29B3C2AB005F7C64 /* Build configuration list for PBXNativeTarget "Vibe-TV" */;
+			buildPhases = (
+				9E4D82FD29B3C2A9005F7C64 /* Sources */,
+				9E4D82FE29B3C2A9005F7C64 /* Frameworks */,
+				9E4D82FF29B3C2A9005F7C64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vibe-TV";
+			packageProductDependencies = (
+				9E4D831A29B3C925005F7C64 /* Lottie */,
+			);
+			productName = "Vibe-TV";
+			productReference = 9E4D830129B3C2A9005F7C64 /* Vibe-TV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E4D82F929B3C2A9005F7C64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					9E4D830029B3C2A9005F7C64 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 9E4D82FC29B3C2A9005F7C64 /* Build configuration list for PBXProject "Vibe-TV" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9E4D82F829B3C2A9005F7C64;
+			packageReferences = (
+				9E4D831929B3C925005F7C64 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
+			productRefGroup = 9E4D830229B3C2A9005F7C64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E4D830029B3C2A9005F7C64 /* Vibe-TV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E4D82FF29B3C2A9005F7C64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E4D832B29B3E188005F7C64 /* welcome-video-loop.mp4 in Resources */,
+				9E4D830C29B3C2AB005F7C64 /* Preview Assets.xcassets in Resources */,
+				9E4D830929B3C2AA005F7C64 /* Assets.xcassets in Resources */,
+				9E4D831E29B3D0B4005F7C64 /* vibe-tv.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E4D82FD29B3C2A9005F7C64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E4D830729B3C2A9005F7C64 /* LaunchScreen.swift in Sources */,
+				9E4D830529B3C2A9005F7C64 /* Vibe_TVApp.swift in Sources */,
+				9E4D832229B3D52F005F7C64 /* WelcomeScreen.swift in Sources */,
+				9E4D831829B3C603005F7C64 /* ColorsHelper.swift in Sources */,
+				9E4D832029B3D0DD005F7C64 /* LottieView.swift in Sources */,
+				9E4D832929B3D9F5005F7C64 /* LoopVideo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9E4D830D29B3C2AB005F7C64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9E4D830E29B3C2AB005F7C64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E4D831029B3C2AB005F7C64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vibe-TV/Preview Content\"";
+				DEVELOPMENT_TEAM = 3VD3F3X6ZU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "abdeios.Vibe-TV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9E4D831129B3C2AB005F7C64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vibe-TV/Preview Content\"";
+				DEVELOPMENT_TEAM = 3VD3F3X6ZU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "abdeios.Vibe-TV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E4D82FC29B3C2A9005F7C64 /* Build configuration list for PBXProject "Vibe-TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E4D830D29B3C2AB005F7C64 /* Debug */,
+				9E4D830E29B3C2AB005F7C64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E4D830F29B3C2AB005F7C64 /* Build configuration list for PBXNativeTarget "Vibe-TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E4D831029B3C2AB005F7C64 /* Debug */,
+				9E4D831129B3C2AB005F7C64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9E4D831929B3C925005F7C64 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9E4D831A29B3C925005F7C64 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E4D831929B3C925005F7C64 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9E4D82F929B3C2A9005F7C64 /* Project object */;
+}
