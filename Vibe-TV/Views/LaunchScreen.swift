@@ -14,7 +14,6 @@ struct LaunchScreen: View {
         if isActive{
             WelcomeScreen()
         }else{
-            
             ZStack {
                 Color.black.ignoresSafeArea()
                 
