@@ -22,6 +22,9 @@
 		9E559C9529B4D097000184E2 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E559C9429B4D097000184E2 /* PrimaryButton.swift */; };
 		9E559C9729B4D41A000184E2 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E559C9629B4D41A000184E2 /* SecondaryButton.swift */; };
 		9E559C9A29B4DDC3000184E2 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E559C9929B4DDC3000184E2 /* LoginScreen.swift */; };
+		9EA4433729B5108700E55CA2 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA4433629B5108700E55CA2 /* SignUpScreen.swift */; };
+		9EA4433929B5112400E55CA2 /* AboutYouScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA4433829B5112400E55CA2 /* AboutYouScreen.swift */; };
+		9EA4433C29B5139E00E55CA2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA4433B29B5139E00E55CA2 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		9E559C9429B4D097000184E2 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		9E559C9629B4D41A000184E2 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		9E559C9929B4DDC3000184E2 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		9EA4433629B5108700E55CA2 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
+		9EA4433829B5112400E55CA2 /* AboutYouScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutYouScreen.swift; sourceTree = "<group>"; };
+		9EA4433B29B5139E00E55CA2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +133,8 @@
 				9E4D830629B3C2A9005F7C64 /* LaunchScreen.swift */,
 				9E4D832129B3D52F005F7C64 /* WelcomeScreen.swift */,
 				9E559C9829B4DD9F000184E2 /* LoginViews */,
+				9EA4433529B5103500E55CA2 /* SignUpViews */,
+				9EA4433A29B5138500E55CA2 /* HomeViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,6 +161,23 @@
 				9E559C9929B4DDC3000184E2 /* LoginScreen.swift */,
 			);
 			path = LoginViews;
+			sourceTree = "<group>";
+		};
+		9EA4433529B5103500E55CA2 /* SignUpViews */ = {
+			isa = PBXGroup;
+			children = (
+				9EA4433629B5108700E55CA2 /* SignUpScreen.swift */,
+				9EA4433829B5112400E55CA2 /* AboutYouScreen.swift */,
+			);
+			path = SignUpViews;
+			sourceTree = "<group>";
+		};
+		9EA4433A29B5138500E55CA2 /* HomeViews */ = {
+			isa = PBXGroup;
+			children = (
+				9EA4433B29B5139E00E55CA2 /* HomeView.swift */,
+			);
+			path = HomeViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +260,8 @@
 			files = (
 				9E4D830729B3C2A9005F7C64 /* LaunchScreen.swift in Sources */,
 				9E4D830529B3C2A9005F7C64 /* Vibe_TVApp.swift in Sources */,
+				9EA4433C29B5139E00E55CA2 /* HomeView.swift in Sources */,
+				9EA4433729B5108700E55CA2 /* SignUpScreen.swift in Sources */,
 				9E0AC63829B4FCEA006FB11B /* Extentions.swift in Sources */,
 				9E559C9A29B4DDC3000184E2 /* LoginScreen.swift in Sources */,
 				9E4D832229B3D52F005F7C64 /* WelcomeScreen.swift in Sources */,
@@ -243,6 +270,7 @@
 				9E559C9529B4D097000184E2 /* PrimaryButton.swift in Sources */,
 				9E4D832029B3D0DD005F7C64 /* LottieView.swift in Sources */,
 				9E4D832929B3D9F5005F7C64 /* LoopVideo.swift in Sources */,
+				9EA4433929B5112400E55CA2 /* AboutYouScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

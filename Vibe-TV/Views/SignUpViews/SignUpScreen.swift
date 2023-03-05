@@ -1,5 +1,5 @@
 //
-//  LoginScreen.swift
+//  SignUpScreen.swift
 //  Vibe-TV
 //
 //  Created by Abdel Baali on 05/03/23.
@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct LoginScreen: View {
+struct SignUpScreen: View {
+    
     private enum FocusedField {
            case email, password
        }
@@ -18,6 +19,7 @@ struct LoginScreen: View {
     @State var showPassword: Bool = false
     @State var fieldsEmpty = false
     @FocusState private var isFocused: FocusedField?
+    
     
     var body: some View {
         NavigationView {
@@ -41,12 +43,12 @@ struct LoginScreen: View {
                 
                 
                 VStack(alignment: .leading, spacing: 20){
-                    Text("Log in")
+                    Text("Sign in")
                         .foregroundColor(.white)
                         .font(.system(size: 30, weight: .bold))
                         .minimumScaleFactor(0.01)
                     
-                    Text("Enter  your email and password associated with your account.")
+                    Text("Insert your email address and add a password to create a new account.")
                         .foregroundColor(.white_30)
                         .font(.system(size: 16, weight: .medium))
                         .lineLimit(2)
@@ -157,17 +159,18 @@ struct LoginScreen: View {
                     
                     
                     //forgot password
-                    Button {
-                        
+                    NavigationLink {
+                        LoginScreen()
                     } label: {
                         HStack {
-                            Text("Forgot your password?")
+                            Text("Already have an account? log in")
                                 .foregroundColor(.purple_primary)
                             .font(.system(size: 12,weight: .regular))
                             
                             Spacer()
                         }
                     }
+
 
                     
 
@@ -178,10 +181,11 @@ struct LoginScreen: View {
                 //continue button
                 NavigationLink {
                     if email.isEmpty || password.isEmpty {
-                        HomeView()
+                        AboutYouScreen()
                     }
                 } label: {
                     PrimaryButton(label: "Continue")
+                        
                 }
                 
                 .padding(.bottom, 20)
@@ -197,20 +201,11 @@ struct LoginScreen: View {
         .ignoresSafeArea(.keyboard)
         .navigationBarBackButtonHidden(true)
         .preferredColorScheme(.dark)
-        
     }
 }
 
-struct LoginScreen_Previews: PreviewProvider {
+struct SignUpScreen_Previews: PreviewProvider {
     static var previews: some View {
-        LoginScreen()
-            .previewDevice("iPhone 14 Pro")
-        
-        LoginScreen()
-            .previewDevice("iPhone 13 mini")
+        SignUpScreen()
     }
 }
-
-
-
-

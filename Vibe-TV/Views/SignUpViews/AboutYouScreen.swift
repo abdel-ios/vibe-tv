@@ -1,5 +1,5 @@
 //
-//  LoginScreen.swift
+//  AboutYouScreen.swift
 //  Vibe-TV
 //
 //  Created by Abdel Baali on 05/03/23.
@@ -7,17 +7,19 @@
 
 import SwiftUI
 
-struct LoginScreen: View {
+struct AboutYouScreen: View {
+    
     private enum FocusedField {
-           case email, password
+           case firstName, lastName
        }
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    @State var email: String = ""
-    @State var password: String = ""
+    @State var firstName: String = ""
+    @State var lastName: String = ""
     @State var showPassword: Bool = false
     @State var fieldsEmpty = false
     @FocusState private var isFocused: FocusedField?
+    
     
     var body: some View {
         NavigationView {
@@ -41,12 +43,12 @@ struct LoginScreen: View {
                 
                 
                 VStack(alignment: .leading, spacing: 20){
-                    Text("Log in")
+                    Text("About you")
                         .foregroundColor(.white)
                         .font(.system(size: 30, weight: .bold))
                         .minimumScaleFactor(0.01)
                     
-                    Text("Enter  your email and password associated with your account.")
+                    Text("We love to get to know each other, tell us a little bit about yourself")
                         .foregroundColor(.white_30)
                         .font(.system(size: 16, weight: .medium))
                         .lineLimit(2)
@@ -59,7 +61,7 @@ struct LoginScreen: View {
                     //email
                     VStack(spacing: 15){
                         HStack{
-                            Text("Email")
+                            Text("First name")
                                 .foregroundColor(fieldsEmpty ? Color.red_error : .white)
                                 .font(.system(size: 10,weight: .semibold))
                             
@@ -67,16 +69,16 @@ struct LoginScreen: View {
                         }
                         
                         ZStack(alignment: .leading){
-                            if email.isEmpty{
-                                Text(verbatim:"example@mail.com")
+                            if firstName.isEmpty{
+                                Text(verbatim:"Jhon")
                                     .foregroundColor(Color.white_30)
                                     .font(.system(size: 15))
                                     .textInputAutocapitalization(.none)
                             }
-                            TextField("", text: $email)
-                                .focused($isFocused, equals: .email)
+                            TextField("", text: $firstName)
+                                .focused($isFocused, equals: .firstName)
                                 .onSubmit {
-                                    self.isFocused = .password
+                                    self.isFocused = .lastName
                                 }
                                 .submitLabel(.next)
                             
@@ -86,7 +88,7 @@ struct LoginScreen: View {
                         .font(.system(size: 16))
                         .background(
                             RoundedRectangle(cornerRadius: 10)
-                                .strokeBorder(self.isFocused == .email ? Color.purple_primary : .clear, lineWidth: self.isFocused == .email ? 1.2 : 0)
+                                .strokeBorder(self.isFocused == .firstName ? Color.purple_primary : .clear, lineWidth: self.isFocused == .firstName ? 1.2 : 0)
                                 .background(
                                     RoundedRectangle(cornerRadius: 10)
                                     .foregroundColor(Color.white_10))
@@ -98,7 +100,7 @@ struct LoginScreen: View {
                     //password
                     VStack(spacing: 15){
                         HStack{
-                            Text("Password")
+                            Text("Last name")
                                 .foregroundColor(fieldsEmpty ? Color.red_error : .white)
                                 .font(.system(size: 10,weight: .semibold))
                             
@@ -106,48 +108,26 @@ struct LoginScreen: View {
                         }
                         
                         ZStack(alignment: .leading){
-                            if password.isEmpty{
-                                Text(verbatim:"Enter password")
+                            if lastName.isEmpty{
+                                Text(verbatim:"Doe")
                                     .foregroundColor(Color.white_30)
                                     .font(.system(size: 15))
                                     .textInputAutocapitalization(.none)
                             }
                             
-                            if showPassword{
-                                TextField("", text: $password)
-                                    .focused($isFocused, equals: .password)
-                                    .onSubmit {
-                                        self.isFocused = nil
-                                    }
-                                    .submitLabel(.done)
-                            }else {
-                                SecureField("", text: $password)
-                                    .submitLabel(.done)
-                                    .focused($isFocused, equals: .password)
-                                    .onSubmit {
-                                        self.isFocused = nil
-                                    }
-                            }
-                            
-                            HStack{
-                                
-                                Spacer()
-                                
-                                Image(systemName: showPassword ? "eye" : "eye.slash")
-                                    .foregroundColor(showPassword ? .white : Color.white_30)
-                                    .font(.system(size: 15))
-                                    .onTapGesture {
-                                            showPassword.toggle()
-                                    }
-                                
-                            }
+                            TextField("", text: $lastName)
+                                .focused($isFocused, equals: .lastName)
+                                .onSubmit {
+                                    self.isFocused = nil
+                                }
+                                .submitLabel(.done)
                         }
                         .padding(.horizontal,20)
                         .foregroundColor(.white)
                         .font(.system(size: 16))
                         .background(
                             RoundedRectangle(cornerRadius: 10)
-                                .strokeBorder(self.isFocused == .password ? Color.purple_primary : .clear, lineWidth: self.isFocused == .password ? 1.2 : 0)
+                                .strokeBorder(self.isFocused == .lastName ? Color.purple_primary : .clear, lineWidth: self.isFocused == .lastName ? 1.2 : 0)
                                 .background(
                                     RoundedRectangle(cornerRadius: 10)
                                     .foregroundColor(Color.white_10))
@@ -155,21 +135,7 @@ struct LoginScreen: View {
                         )
                     }
                     
-                    
-                    //forgot password
-                    Button {
-                        
-                    } label: {
-                        HStack {
-                            Text("Forgot your password?")
-                                .foregroundColor(.purple_primary)
-                            .font(.system(size: 12,weight: .regular))
-                            
-                            Spacer()
-                        }
-                    }
-
-                    
+        
 
                 }
                 
@@ -177,7 +143,7 @@ struct LoginScreen: View {
                 
                 //continue button
                 NavigationLink {
-                    if email.isEmpty || password.isEmpty {
+                    if firstName.isEmpty || lastName.isEmpty {
                         HomeView()
                     }
                 } label: {
@@ -197,20 +163,11 @@ struct LoginScreen: View {
         .ignoresSafeArea(.keyboard)
         .navigationBarBackButtonHidden(true)
         .preferredColorScheme(.dark)
-        
     }
 }
 
-struct LoginScreen_Previews: PreviewProvider {
+struct AboutYouScreen_Previews: PreviewProvider {
     static var previews: some View {
-        LoginScreen()
-            .previewDevice("iPhone 14 Pro")
-        
-        LoginScreen()
-            .previewDevice("iPhone 13 mini")
+        AboutYouScreen()
     }
 }
-
-
-
-

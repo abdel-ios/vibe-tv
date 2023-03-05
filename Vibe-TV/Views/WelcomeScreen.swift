@@ -20,9 +20,6 @@ struct WelcomeScreen: View {
                     Spacer()
                 }
                 
-                
-                
-                
                 VStack(spacing: 45){
                     
                     Spacer()
@@ -47,7 +44,7 @@ struct WelcomeScreen: View {
                         
                         // sign in button
                         NavigationLink {
-                            
+                            SignUpScreen()
                         } label: {
                             PrimaryButton(label: "Start now")
                         }
