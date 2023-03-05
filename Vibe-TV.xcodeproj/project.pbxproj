@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E0AC63829B4FCEA006FB11B /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0AC63729B4FCEA006FB11B /* Extentions.swift */; };
 		9E4D830529B3C2A9005F7C64 /* Vibe_TVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4D830429B3C2A9005F7C64 /* Vibe_TVApp.swift */; };
 		9E4D830729B3C2A9005F7C64 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4D830629B3C2A9005F7C64 /* LaunchScreen.swift */; };
 		9E4D830929B3C2AA005F7C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E4D830829B3C2AA005F7C64 /* Assets.xcassets */; };
@@ -20,9 +21,11 @@
 		9E4D832B29B3E188005F7C64 /* welcome-video-loop.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9E4D832A29B3E187005F7C64 /* welcome-video-loop.mp4 */; };
 		9E559C9529B4D097000184E2 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E559C9429B4D097000184E2 /* PrimaryButton.swift */; };
 		9E559C9729B4D41A000184E2 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E559C9629B4D41A000184E2 /* SecondaryButton.swift */; };
+		9E559C9A29B4DDC3000184E2 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E559C9929B4DDC3000184E2 /* LoginScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E0AC63729B4FCEA006FB11B /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		9E4D830129B3C2A9005F7C64 /* Vibe-TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vibe-TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E4D830429B3C2A9005F7C64 /* Vibe_TVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibe_TVApp.swift; sourceTree = "<group>"; };
 		9E4D830629B3C2A9005F7C64 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		9E4D832A29B3E187005F7C64 /* welcome-video-loop.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "welcome-video-loop.mp4"; sourceTree = "<group>"; };
 		9E559C9429B4D097000184E2 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		9E559C9629B4D41A000184E2 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		9E559C9929B4DDC3000184E2 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 				9E4D831729B3C603005F7C64 /* ColorsHelper.swift */,
 				9E4D831F29B3D0DD005F7C64 /* LottieView.swift */,
 				9E4D832829B3D9F5005F7C64 /* LoopVideo.swift */,
+				9E0AC63729B4FCEA006FB11B /* Extentions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 			children = (
 				9E4D830629B3C2A9005F7C64 /* LaunchScreen.swift */,
 				9E4D832129B3D52F005F7C64 /* WelcomeScreen.swift */,
+				9E559C9829B4DD9F000184E2 /* LoginViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -139,6 +145,14 @@
 				9E4D832A29B3E187005F7C64 /* welcome-video-loop.mp4 */,
 			);
 			path = Videos;
+			sourceTree = "<group>";
+		};
+		9E559C9829B4DD9F000184E2 /* LoginViews */ = {
+			isa = PBXGroup;
+			children = (
+				9E559C9929B4DDC3000184E2 /* LoginScreen.swift */,
+			);
+			path = LoginViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +235,8 @@
 			files = (
 				9E4D830729B3C2A9005F7C64 /* LaunchScreen.swift in Sources */,
 				9E4D830529B3C2A9005F7C64 /* Vibe_TVApp.swift in Sources */,
+				9E0AC63829B4FCEA006FB11B /* Extentions.swift in Sources */,
+				9E559C9A29B4DDC3000184E2 /* LoginScreen.swift in Sources */,
 				9E4D832229B3D52F005F7C64 /* WelcomeScreen.swift in Sources */,
 				9E4D831829B3C603005F7C64 /* ColorsHelper.swift in Sources */,
 				9E559C9729B4D41A000184E2 /* SecondaryButton.swift in Sources */,

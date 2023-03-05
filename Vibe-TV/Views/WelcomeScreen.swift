@@ -54,7 +54,7 @@ struct WelcomeScreen: View {
                         
                         // login button
                         NavigationLink {
-                            
+                            LoginScreen()
                         } label: {
                             SecondaryButton(label: "I already have an account")
                         }
